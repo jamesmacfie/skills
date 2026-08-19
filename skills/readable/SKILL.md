@@ -1,6 +1,6 @@
 ---
 name: readable
-description: Write text that lands in front of a human to the Google developer documentation style guide (developers.google.com/style). Load it when you are about to compose a deliverable: the final reply that closes out a turn, a PR title or description, a commit message body, a code review comment, a GitHub or Linear issue, a README or doc, release notes, a changelog, a code comment, an error or log message, or UI copy. Skip it for thinking, planning, tool calls, progress narration, and any other intermediate step — style the finished text, not the work in progress.
+description: "Write text that lands in front of a human to the Google developer documentation style guide (developers.google.com/style). Load it when you are about to compose a deliverable: the final reply that closes out a turn, a PR title or description, a commit message body, a code review comment, a GitHub or Linear issue, a README or doc, release notes, a changelog, a code comment, an error or log message, or UI copy. Skip it for thinking, planning, tool calls, progress narration, and any other intermediate step — style the finished text, not the work in progress."
 ---
 
 # Google developer documentation style
