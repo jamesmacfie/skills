@@ -4,7 +4,7 @@ My [Claude Code](https://claude.com/claude-code) skills. Each folder under `skil
 
 | Skill | What it does |
 | --- | --- |
-| [readable](./skills/readable) | Writes anything a human reads — replies, PR descriptions, commit messages, docs, error strings — to the [Google developer documentation style guide](https://developers.google.com/style). |
+| [readable](./skills/readable) | Writes anything a human reads (replies, PR descriptions, commit messages, docs, error strings) to the [Google developer documentation style guide](https://developers.google.com/style), and strips the patterns that make text read as AI-generated. |
 
 ## Install as a plugin
 

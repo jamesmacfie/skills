@@ -17,7 +17,8 @@ Source pages under https://developers.google.com/style: /commas, /dashes, /hyphe
 
 ## Dashes and hyphens
 
-- Em dash for a break in a sentence, with no space on either side. `&mdash;` in HTML.
+- No em dashes. They're a strong AI tell. Use a period or a comma. Don't substitute parentheses,
+  an en dash, or a spaced hyphen, which just trades one tell for another.
 - No en dashes. Use a hyphen or the word "to".
 - Never separate a term from its description with a dash. Use a colon: "Example: this is an example".
 - Prefixes usually close up: metadata, preprocessing, infrastructure. Hyphenate after "self" and
@@ -32,7 +33,7 @@ Source pages under https://developers.google.com/style: /commas, /dashes, /hyphe
 
 ## Colons and semicolons
 
-- Whatever precedes a colon must stand alone as a sentence. "The fields are defined as follows:" —
+- Whatever precedes a colon must stand alone as a sentence. "The fields are defined as follows:",
   not "The fields are:".
 - Lowercase the first word after a colon, unless it's a proper noun, a heading, a quotation, or a
   label like "Note".
@@ -43,7 +44,7 @@ Source pages under https://developers.google.com/style: /commas, /dashes, /hyphe
 
 - End every complete sentence with a period, except questions, headings, and some list items.
 - One space between sentences.
-- Periods and commas go inside quotation marks — unless the quoted thing is a literal in code font:
+- Periods and commas go inside quotation marks, unless the quoted thing is a literal in code font:
   "If you enter `escape`, the program crashes."
 - A period goes inside parentheses only when the whole sentence is inside them.
 - Never end a heading with a period.
@@ -55,7 +56,7 @@ Source pages under https://developers.google.com/style: /commas, /dashes, /hyphe
 - Straight quotes and apostrophes only. Never curly.
 - Quotation marks for the titles of short works and for sections of a larger document, when unlinked.
   Italics for full-length works. Single quotes only inside a nested quotation or in code.
-- Avoid parentheses — readers skip them. Use a comma, a dash, or a separate sentence. Never write
+- Avoid parentheses. Readers skip them. Use a comma or a separate sentence. Never write
   "file(s)".
 - Avoid slashes outside code, paths, and URLs. Write "developed or hosted", not "developed/hosted".
   Never "3/15/2024", "c/o", or "w/".
@@ -91,7 +92,7 @@ Source pages under https://developers.google.com/style: /commas, /dashes, /hyphe
 
 ## Contractions, articles, prepositions
 
-- Use everyday contractions: you're, don't, there's. Especially the negative ones — a reader
+- Use everyday contractions: you're, don't, there's. Especially the negative ones, because a reader
   scanning can miss a standalone "not".
 - No nonstandard or three-word contractions.
 - Keep articles, including in headings: "Create a VM instance".
@@ -149,7 +150,7 @@ Source pages under https://developers.google.com/style: /commas, /dashes, /hyphe
 ## Maths and phone numbers
 
 - HTML entities for operators (`&minus;`, `&times;`, `&ne;`), with nonbreaking spaces around them.
-  Never italicize an operator. Never use `*` for multiplication or `^` for an exponent — use `<sup>`.
+  Never italicize an operator. Never use `*` for multiplication or `^` for an exponent. Use `<sup>`.
 - Italicize variables. Keep short expressions inline; put long equations on their own line.
 - Use notation when it's clearer than words: "_a_ > _b_".
 - Phone numbers: only 800-555-0100 through 800-555-0199. Nonbreaking hyphens (`&#8209;`) between

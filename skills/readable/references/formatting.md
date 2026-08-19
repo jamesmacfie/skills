@@ -25,15 +25,15 @@ bold or quotation marks where italics are called for.
 
 ## Headings and titles
 
-- Sentence case. No trailing period. Keep punctuation simple — complex punctuation means the heading
+- Sentence case. No trailing period. Keep punctuation simple. Complex punctuation means the heading
   isn't clear yet.
 - Task headings take the bare imperative: "Create an instance". Not "Creating an instance".
 - Concept headings are noun phrases: "Migration to Google Cloud". Avoid an -ing word first;
   established gerunds like "Billing" and "Pricing" are the exception.
 - Optional sections: "Optional: Customize your alias". Not "(optional)".
 - One h1 per page. Don't skip levels. Don't leave a heading with no content under it.
-- Don't number sections, don't put a link in a heading, and don't use code alone as a heading —
-  add a descriptive noun.
+- Don't number sections, don't put a link in a heading, and don't use code alone as a heading. Add a
+  descriptive noun.
 - Make headings descriptive enough to distinguish them from each other; readers navigate by them.
 - Introduce a group of subsections with "The following sections describe…". Don't write
   "this section".
@@ -44,7 +44,7 @@ bold or quotation marks where italics are called for.
 Lowercase, hyphen-separated anchor IDs: `introduction-to-everything`. In Markdown, append
 `{: #anchor-id }`. Add a custom anchor to anything you link to often, so the link survives a heading
 rewrite. When you rewrite a heading, keep the old anchor. Don't change an existing anchor unless the
-wording is a problem — and if you do, update every inbound link.
+wording is a problem, and if you do, update every inbound link.
 
 ## Lists
 
@@ -53,7 +53,7 @@ wording is a problem — and if you do, update every inbound link.
 - Introduce with a complete sentence: a colon if the list follows immediately, a period if something
   comes between. Never let list items complete a sentence fragment.
 - Keep every item in the same syntactic shape.
-- Capitalize each item, unless case is significant, and end it with a period — unless it's a single
+- Capitalize each item, unless case is significant, and end it with a period, unless it's a single
   word, has no verb, is entirely code, or is link text.
 - In a description list, no period after the term; period after the description.
 - Nested numbered lists use lowercase letters, then Roman numerals.
@@ -65,7 +65,7 @@ wording is a problem — and if you do, update every inbound link.
   description list. A single value per item is a list.
 - Never for layout, never for code, and never split a one-dimensional list into columns.
   No single-row or single-column tables. Avoid a table in the middle of a numbered procedure.
-- Introduce it with a complete sentence — colon if the table follows immediately, otherwise a period.
+- Introduce it with a complete sentence: colon if the table follows immediately, otherwise a period.
 - Sentence case headers, no ending punctuation. Mark only the first row or column as headers, with
   `<th>` and a `scope` attribute.
 - Never merge cells with `colspan` or `rowspan`. No custom styling. Use CSS that adapts to the
@@ -78,15 +78,15 @@ wording is a problem — and if you do, update every inbound link.
 
 Four kinds, in ascending severity:
 
-- **Note** — useful but skippable. Never for a prerequisite, a cross-reference, or anything the
+- **Note**. Useful but skippable. Never for a prerequisite, a cross-reference, or anything the
   reader actually needs.
-- **Caution** — proceed carefully; care now avoids a problem later.
-- **Warning** — don't do this. Reserve it for irreversible actions, data loss, security exposure, or
+- **Caution**. Proceed carefully; care now avoids a problem later.
+- **Warning**. Don't do this. Reserve it for irreversible actions, data loss, security exposure, or
   financial harm.
-- **Success** — only in interactive content, never in static docs.
+- **Success**. Only in interactive content, never in static docs.
 
 Write the sentence as body text first, then decide whether a notice earns its place. Use them
-sparingly; a page of notices has no notices. Never stack two in a row — reorganize instead. Don't
+sparingly; a page of notices has no notices. Never stack two in a row. Reorganize instead. Don't
 turn a procedural step or an expected result into a notice.
 
 ## Images and figures
@@ -123,14 +123,14 @@ turn a procedural step or an expected result into a notice.
 
 ## Paragraphs
 
-One idea per paragraph. Past 5 or 6 sentences, it's carrying too much — split it. Short sentences
-rather than long ones. Key information first. A one-sentence paragraph is fine. Left-align only —
-never centered or justified. Never force a line break inside a sentence.
+One idea per paragraph. Past 5 or 6 sentences, it's carrying too much, so split it. Short sentences
+rather than long ones. Key information first. A one-sentence paragraph is fine. Left-align only, never centered or
+justified. Never force a line break inside a sentence.
 
 ## Introducing examples
 
-- At the end of a sentence, lead in with a comma, parentheses, or an em dash: "Choose a strong
-  encryption algorithm, such as AES-256".
+- At the end of a sentence, lead in with a comma: "Choose a strong encryption algorithm, such as
+  AES-256".
 - Mid-sentence and short: "Enter a six-digit hex number (for example, `228B22`), and then click OK".
 - Mid-sentence and long: rewrite, or move the example to the end.
 - Longer than that: give it its own sentence starting with "For example".
@@ -140,21 +140,21 @@ never centered or justified. Never force a line break inside a sentence.
 
 - Never rely on color, size, or position alone. Add a text cue.
 - Refer to a control by its label, not its appearance: "Click **Save**", not "click the blue button".
-- No directional language — above, below, left-side. Use "the following" and "the preceding".
+- No directional language, such as above, below, or left-side. Use "the following" and "the preceding".
 - Follow the heading hierarchy; style with CSS rather than picking a level for its looks.
 - Semantic HTML: `<em>`, `<strong>`, `<button>`, `<label>`, `<cite>` for a standalone work's title.
   `<br>` only for a real content line break, never for spacing.
 - Every input gets a `<label>`, placed outside the field. Error messages state the fix:
   "Name is a required field".
 - 4.5:1 contrast minimum. Never `display:none` or `visibility:hidden` for content. Never a
-  mouseover-only interaction — add focus and blur. Keep CSS order matching DOM order.
+  mouseover-only interaction. Add focus and blur. Keep CSS order matching DOM order.
 - Everything reachable by keyboard. Caption all audio and video. No flickering or flashing.
 - Avoid camel case and all-caps: some screen readers spell them out letter by letter.
 - Test the page with color, sound, images, and punctuation removed. It should still make sense.
 
 ## Footnotes
 
-Avoid them — they're bad for screen readers and for translation. Use a cross-reference, a note, or
+Avoid them. They're bad for screen readers and for translation. Use a cross-reference, a note, or
 parentheses instead. If you truly need one, `<sup>1</sup>` and put it at the bottom of the page.
 
 ## Markdown or HTML

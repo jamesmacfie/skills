@@ -12,19 +12,19 @@ Source pages under https://developers.google.com/style: /procedures, /ui-element
 - State the location before the action: "In Google Docs, click…".
 - State the goal before the action: "To start a new document, click…".
 - One decision per step. Complete sentences, parallel structure.
-- Say what the reader needs — hardware, software, permissions — before the first step.
+- Say what the reader needs, such as hardware, software, and permissions, before the first step.
 - Say what happens as a result of a step when it isn't obvious.
 - Chain a menu path with `>`: "Click **File > New > Document**".
 - Optional steps open with "Optional: ". Not "(optional)".
 - Don't repeat a procedure you've already written; link to it.
 - When there are several ways to do something, document the simplest and most accessible one.
 - Never "please", never a direction like "above" or "below", and don't lean on keyboard shortcuts.
-- Don't write "run the following command" — say what the command does.
+- Don't write "run the following command". Say what the command does.
 - Give the intro sentence real content beyond restating the heading, and end it with a colon.
 
 ## Prescriptive language
 
-Required: "must", or a plain imperative. Recommended: "We recommend" — "should" only for a widely
+Required: "must", or a plain imperative. Recommended: "We recommend". Use "should" only for a widely
 recognized best practice. Optional: "can". Certain outcome: state it plainly. Possible outcome:
 "might" or "can". Never "should be" to describe a state that just is; say "The server sets the value
 to `true`". In sample commands, give the arguments for the common case and link the full reference.
@@ -38,13 +38,13 @@ to `true`". In sample commands, give the arguments for the common case and link 
   small detached window, *pane* or *panel* for a region inside a window, *section* for a labelled
   group of controls, *command* for a menu entry, *field* or *text box* for text input, *list* for a
   list box.
-- Checkboxes are **selected** and **cleared** — never checked, unchecked, or deselected.
+- Checkboxes are **selected** and **cleared**, never checked, unchecked, or deselected.
 - Prepositions: **in** a dialog, field, list, menu, pane, or window; **on** a page, tab, or toolbar.
 - Verbs to use: click, choose, drag, enable, enter, type, go to, hold the pointer over, press,
   select, tap, turn on, turn off.
 - Don't turn a UI label into a verb ("**Name** the account"). Don't use slang for a control
   ("hamburger icon"). Don't use directional language.
-- Keys: spell modifiers out and capitalize the letter — "Control+S", not "Ctrl+s". Give the macOS
+- Keys: spell modifiers out and capitalize the letter: "Control+S", not "Ctrl+s". Give the macOS
   equivalent in parentheses. Use `<kbd>` or monospace.
 - Name an icon alongside its glyph. If an icon has no tooltip, that's an accessibility bug worth
   filing.
@@ -75,7 +75,7 @@ Grammar with code:
 
 - Spaces, not tabs. Follow the language's own style guide; two spaces is the usual default.
 - Wrap at 80 characters.
-- Introduce every sample with a sentence — colon if the sample follows immediately, period if
+- Introduce every sample with a sentence: colon if the sample follows immediately, period if
   something intervenes.
 - Mark an omission with a language-appropriate comment (`# Several lines are omitted here.`), never
   an ellipsis. Don't offer click-to-copy on a block with omissions.
@@ -97,7 +97,7 @@ Grammar with code:
 ## Placeholders
 
 - Uppercase with underscores: `API_NAME`, `METHOD_NAME`. Not `api_name`, `apiName`, or `API-name`.
-- No possessives — never `MY_API_NAME` or `YOUR_API_NAME`.
+- No possessives. Never `MY_API_NAME` or `YOUR_API_NAME`.
 - Descriptive names; no strings of x's unless that's the convention (HTTP status codes).
 - HTML: `<code><var>PLACEHOLDER</var></code>` inside code, `<var>PLACEHOLDER</var>` in prose.
   Markdown: `` *`PLACEHOLDER`* ``. Inside a fenced block, plain text.
@@ -111,7 +111,7 @@ Lowercase, hyphen-separated, ASCII alphanumeric: `query-data.html`, `build-scrip
 names like `document1.html`. Match an existing directory's convention if changing everything isn't
 practical.
 
-In prose: code font, with the word "file" after it — "the `build.sh` file". Preserve the exact
+In prose: code font, with the word "file" after it: "the `build.sh` file". Preserve the exact
 spelling. Name the format, not the extension: "a PNG file", not "a .png file"; "a Markdown file", not
 "a .md file".
 
@@ -119,7 +119,7 @@ spelling. Name the format, not the extension: "a PNG file", not "a .png file"; "
 
 - Domains: `example.com`, `example.org`, `example.net`. Google-owned alternatives include
   `altostrat.com`, `examplepetstore.com`, `cymbalgroup.com`.
-- Email: an approved name at an approved domain — `dana@example.com`.
+- Email: an approved name at an approved domain: `dana@example.com`.
 - Person names, gender-neutral by preference: Alex, Amal, Ariel, Bola, Charlie, Cruz, Dana, Dani,
   Hao, Ira, Izumi, Jie, Kai, Kalani, Kim, Kiran, Lee, Lucian, Luka, Mahan, Noam, Nur, Quinn, Raha,
   Rosario, Sasha, Tal, Taylor, Tristan, Yuri. Add a surname initial when you need one: "Quinn N.".
@@ -147,13 +147,13 @@ parameter, return value, and exception.
 - Exceptions: "If condition…" when the tool inserts "Throws", otherwise "Thrown when condition…".
 - Deprecations: name the replacement in the first sentence, give the version, say why, and point at
   the migration path.
-- Write "for example", never "e.g." — truncation can cut it off mid-phrase.
+- Write "for example", never "e.g.", because truncation can cut it off mid-phrase.
 
 ## Third-party content
 
 Paraphrase and link; don't reproduce. That covers documentation, websites, books, blogs, videos,
 images, podcasts, code, logos, and speech, and it includes dictionaries and Wikipedia. Open source
-and GitHub content is not automatically reusable — check the license, and attribute where it requires
+and GitHub content is not automatically reusable. Check the license, and attribute where it requires
 it.
 
 Trademarks: follow the owner's guidelines, use the mark as a modifier rather than a standalone noun,

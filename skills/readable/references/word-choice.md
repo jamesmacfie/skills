@@ -1,7 +1,8 @@
 # Word choice
 
-Source: https://developers.google.com/style/word-list, /jargon, /inclusive-documentation,
-/translation. Fetch the word list itself for anything not settled here.
+Sources: https://developers.google.com/style/word-list, /jargon, /inclusive-documentation,
+/translation, plus the unslop skill for the AI vocabulary and metaphor-noun sections. Fetch the
+Google word list itself for anything not settled here.
 
 ## Never use these
 
@@ -13,8 +14,8 @@ Source: https://developers.google.com/style/word-list, /jargon, /inclusive-docum
 | aka | also known as |
 | N/A | not applicable, or not available |
 | and/or | "and", "or", or "A, B, or both" |
-| please | nothing — just give the instruction |
-| simply, easy, quickly, just | nothing — cut it |
+| please | nothing, just give the instruction |
+| simply, easy, quickly, just | nothing, cut it |
 | click here, this document, this article (as link text) | the page title or a description |
 | allows you to | lets you |
 | in order to | to |
@@ -71,6 +72,64 @@ Source: https://developers.google.com/style/word-list, /jargon, /inclusive-docum
 | ! (exclamation mark) | a period |
 | & (as "and") | and |
 
+## AI vocabulary
+
+These words are rare in human writing and common in generated text. Seeing two or three in a
+paragraph is enough to date the whole thing. Full context in [ai-tells.md](ai-tells.md).
+
+| Don't use | Use instead |
+| --- | --- |
+| delve into | look at, dig into, read |
+| crucial, pivotal, vital, essential | important, or say what breaks without it |
+| additionally, moreover, furthermore | and, also, or start the sentence |
+| underscore, highlight (meaning show) | show, prove, or name the fact |
+| showcase | show, demonstrate |
+| enhance | improve, or name the change |
+| garner | get, collect, win |
+| foster, fostering | build, encourage, cause |
+| landscape (abstract) | the field, the market, the options |
+| tapestry, mosaic, symphony (abstract) | cut the sentence |
+| testament to | evidence of, or state the fact |
+| interplay | how they interact |
+| intricate | complex, detailed, fiddly |
+| enduring | lasting, or say how long |
+| seamless, frictionless | say what step is gone |
+| robust | say what it survives |
+| powerful, cutting-edge, groundbreaking | say what it does |
+| vibrant, stunning, breathtaking, nestled | describe it plainly |
+| serves as, stands as, represents (meaning is) | is |
+| boasts, features (meaning has) | has |
+| a rich set of, a wide range of | the number, or the list |
+| navigate (meaning deal with) | handle, work through |
+| unlock, empower, elevate, supercharge | say what becomes possible |
+| in the realm of, in the world of | in |
+| it is important to note that | delete it |
+| when it comes to | for, about, with |
+| not just X, but Y | state the point once |
+
+## Abstract metaphor nouns
+
+Each of these reads as technical but has a plainer, concrete word:
+
+| Don't use | Use instead |
+| --- | --- |
+| substrate | base, foundation |
+| wedge (verb) | add, insert |
+| vector (meaning route) | way, method, path |
+| locus, nexus | centre, the point where |
+| vantage | view, position |
+| primitive (noun) | building block, or name the thing |
+| harness (metaphor) | setup, rig, test runner |
+| surface (as in "API surface") | the API, the set of endpoints |
+| bedrock | foundation |
+| scaffolding (metaphor) | the starter code, the structure |
+| modality, paradigm | approach, mode, style |
+| gold-plating | more than the job needs |
+| ratchet (metaphor) | name the mechanism, or "a limit that only tightens" |
+| evacuate (of code) | move out |
+| endgame | the last phase |
+| north star, flywheel | the goal, or what compounds |
+
 ## Ableist and othering language
 
 Describe the person first, or the condition plainly:
@@ -90,16 +149,16 @@ Research what a community calls itself before writing about it.
 
 ## Word pairs that get confused
 
-- **can** — ability, permission, or an option. **may** — official permission only.
-  **might** — possibility. Don't write "could" where "can" works.
-- **must** — a requirement. **should** — a recognized best practice, nothing weaker.
+- **can**: ability, permission, or an option. **may**: official permission only.
+  **might**: possibility. Don't write "could" where "can" works.
+- **must**: a requirement. **should**: a recognized best practice, nothing weaker.
 - **because**, not **as**, for causation. **since** is about time.
 - **whether**, not **if**, when presenting alternatives.
 - **after**, not **once**.
 - **that** for a restrictive clause, no comma. **which** for a nonrestrictive clause, with a comma.
 - **between** two distinct things; **among** a group.
 - **each** for individual items; **all** for the group.
-- **earlier** / **later** for versions — not lower / higher, not old / new.
+- **earlier** / **later** for versions, not lower / higher, not old / new.
 - **directory** in a command line; **folder** in a graphical interface.
 - **type** for entering text with a keyboard; **enter** for supplying a value by any means.
 
