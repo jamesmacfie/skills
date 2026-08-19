@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/anthropics/claude-code/refs/heads/main/marketplace/marketplace.schema.json",
+  "name": "jamesmacfie",
+  "owner": {
+    "name": "James Macfie",
+    "email": "james@runn.io"
+  },
+  "metadata": {
+    "description": "James Macfie's Claude Code skills."
+  },
+  "plugins": [
+    {
+      "name": "jamesmacfie-skills",
+      "description": "Writing and workflow skills for Claude Code.",
+      "repository": "https://github.com/jamesmacfie/skills",
+      "version": "0.1.0",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": ["writing", "style-guide", "documentation"],
+      "source": "./"
+    }
+  ]
+}

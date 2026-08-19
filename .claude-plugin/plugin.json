@@ -1,0 +1,12 @@
+{
+  "name": "jamesmacfie-skills",
+  "version": "0.1.0",
+  "description": "James Macfie's Claude Code skills.",
+  "author": {
+    "name": "James Macfie",
+    "email": "james@runn.io"
+  },
+  "repository": "https://github.com/jamesmacfie/skills",
+  "license": "MIT",
+  "keywords": ["writing", "style-guide", "documentation"]
+}
