@@ -6,6 +6,7 @@ My skills for [Claude Code](https://claude.com/claude-code) and [Codex](https://
 | --- | --- |
 | [readable](./skills/readable) | Writes anything a human reads (replies, PR descriptions, commit messages, docs, error strings) to the [Google developer documentation style guide](https://developers.google.com/style), and strips the patterns that make text read as AI-generated. |
 | [planner](./skills/planner) | Turns a known goal into a concrete implementation plan for an existing codebase. Reads the code first, then asks in rounds until nothing is assumed, and makes every decision cite the pattern it follows. Invoke it with `/planner`, inside plan mode. |
+| [open-pr](./skills/open-pr) | Cleans up the code you just wrote, rewrites the comments so they say why, then commits, pushes, and opens a pull request whose description is pitched at someone who can read code but wasn't in the room. Invoke it with `/open-pr`. |
 
 ## Install for Claude Code
 
