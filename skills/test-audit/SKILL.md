@@ -1,22 +1,20 @@
 ---
 name: test-audit
-description: "Check new tests against a value bar before they land, or audit existing tests for ones that restate the source, duplicate stronger proof, test implementation instead of behavior, or keep test-only production code alive. Three modes: gate the tests in the current change, audit a path, or run a campaign that prunes one whole area's test surface. Use when you want to know which tests earn their keep."
+description: "Check new tests against a value bar before they land, or audit existing tests for ones that restate the source, duplicate stronger proof, test implementation instead of behavior, or keep test-only production code alive. Runs on the tests the current branch adds or changes. Pass a path to audit existing tests there, or `campaign <area>` to prune one whole area's test surface. Use when you want to know which tests earn their keep."
 disable-model-invocation: true
 ---
 
 # Test audit
 
-Three modes share one value bar:
+With no arguments, check the current branch. Two optional arguments widen the scope:
 
-- **Gate.** Check every new or changed test in the current change before it lands.
-- **Audit.** Sweep a path for tests that re-assert the source, duplicate stronger proof, couple
-  behavior to implementation, or keep test-only production code alive.
-- **Campaign.** Prune one area's whole test surface in a single change. Read
+- **A path.** Audit the existing tests under that path for ones that re-assert the source,
+  duplicate stronger proof, couple behavior to implementation, or keep test-only production code
+  alive.
+- **`campaign` followed by an area.** Prune one area's whole test surface in a single change. Read
   [CAMPAIGN.md](CAMPAIGN.md) before you start one.
 
-Pick the mode from the arguments. No arguments means gate mode on the tests in the working tree
-and the current branch's diff. A path means audit mode on that path. `campaign` followed by an
-area means campaign mode. If the arguments don't make the mode clear, ask.
+All three share one value bar. If the arguments don't make the scope clear, ask.
 
 Optimize for confidence, not deletion count. A broad audit lands as a series of small, coherent
 changes, not one large one.
@@ -28,9 +26,13 @@ Two terms used throughout:
 - A _seam_ is an export, flag, wrapper, global, or injection hook that exists only so a test can
   reach inside. No production caller needs it.
 
-## Gate
+## Check the branch
 
-Answer four questions before you add a test. If you can't answer one, don't add the test yet.
+Find the main branch with `git symbolic-ref refs/remotes/origin/HEAD`, then diff the current
+branch against its merge base with `git diff $(git merge-base HEAD origin/<main>)`. Include
+uncommitted changes. Every test the diff adds or changes is in scope.
+
+For each test in scope, answer four questions. If you can't answer one, the test fails the check.
 
 1. What observable behavior, invariant, or independent contract does it protect?
 2. What realistic regression makes it fail?
@@ -41,7 +43,7 @@ Answer four questions before you add a test. If you can't answer one, don't add 
 4. Does it need a seam? If it does, move the test to the owner instead.
 
 Then check the test against every pattern in [Junk patterns](#junk-patterns). A match fails the
-gate unless the [retention bar](#retention-bar) names a contract the test guards on its own.
+check unless the [retention bar](#retention-bar) names a contract the test guards on its own.
 
 If a test would break under a refactor that keeps behavior the same, it tests implementation.
 Rewrite it at the owner before it lands.
@@ -51,9 +53,12 @@ after the fix at the owner. A regression test that never failed proves the mock 
 fix. One regression test at the owner covers the bug. Don't replay the same scenario at every layer
 it passes through.
 
+Report each test that fails the check, with the question or pattern it fails and the fix you
+propose. Edit only after the user agrees.
+
 ## Junk patterns
 
-The gate rejects a new test that matches one of these. Audits hunt for existing tests that do.
+The branch check fails a test that matches one of these. Audits hunt for existing tests that do.
 
 - Tests with no assertions that exist only to raise coverage.
 - A value compared with itself, or a copy compared with its original.
@@ -79,8 +84,8 @@ The gate rejects a new test that matches one of these. Audits hunt for existing 
 
 A test earns its maintenance cost when it protects behavior, a realistic regression, or a contract
 that matters on its own. In an audit, an existing test that must change when the source is
-reorganized without changing behavior is suspect. It isn't automatically deletable. The gate still
-rejects new ones.
+reorganized without changing behavior is suspect. It isn't automatically deletable. The branch check still
+fails new ones.
 
 Before you judge a candidate, read all of the following:
 
