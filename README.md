@@ -8,6 +8,7 @@ My skills for [Claude Code](https://claude.com/claude-code) and [Codex](https://
 | [planner](./skills/planner) | Turns a known goal into a concrete implementation plan for an existing codebase. Reads the code first, then asks in rounds until nothing is assumed, and makes every decision cite the pattern it follows. Invoke it with `/planner`, inside plan mode. |
 | [open-pr](./skills/open-pr) | Cleans up the code you just wrote, rewrites the comments so they say why, then commits, pushes, and opens a pull request whose description is pitched at someone who can read code but wasn't in the room. Invoke it with `/open-pr`. |
 | [test-audit](./skills/test-audit) | Checks new tests against a value bar before they land, or audits existing tests for ones that restate the source, duplicate stronger proof, or keep test-only production code alive. Adapted from [OpenClaw's skill](https://github.com/openclaw/openclaw/tree/main/.agents/skills/test-audit). Invoke it with `/test-audit` to check the tests on your current branch. Add a path to audit existing tests there, or `campaign <area>` to prune one area. |
+| [prune-tests](./skills/prune-tests) | Deletes tests that guard no behavior: ones that check removed code, can never fail, or break whenever the implementation changes. Rewrites the ones worth keeping against real behavior, and removes production code that only existed for the deleted tests. Invoke it with `/prune-tests`, optionally with a path. |
 
 ## Install for Claude Code
 
